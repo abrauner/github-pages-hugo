@@ -3,16 +3,16 @@ addons:
   apt:
     packages:
       - python-pygments
-      - hugo
 
 # Clean and don't fail
 install:
+  - wget https://github.com/gohugoio/hugo/releases/download/v0.31.1/hugo_0.31.1_Linux-64bit.deb
+  - sudo dpkg -i hugo*.deb
   - rm -rf public || exit 0
 
 # Build the website
 script:
-  - cd src
-  - ../binaries/hugo --theme=ghoust
+  - hugo --theme=hugo-icon
 
 # Deploy to GitHub pages
 deploy:
