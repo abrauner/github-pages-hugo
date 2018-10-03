@@ -1,12 +1,12 @@
 # Main config file for icon theme.
 theme = "hugo-icon"
-baseURL = "https://www.example.com/"
-languageCode = "en-AU"
-title = "My Awesome Title"
+baseURL = "https://abrauner.github.io/github-pages-hugo/"
+languageCode = "de-DE"
+title = "An hugo test site"
 
 # Metadata
 [params]
-  author = "Your name"
+  author = "Ansi B."
   description = "Cool description"
 
 # Hero section (from here on is for icon theme)
@@ -216,4 +216,3 @@ title = "My Awesome Title"
   vine = "#"
   linkedin = "#"
   instagram = "#"
-  
